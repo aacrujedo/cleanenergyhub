@@ -1,0 +1,23 @@
+.slider {
+    overflow: hidden;
+}
+
+.carousel-container {
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    background-color: red;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
