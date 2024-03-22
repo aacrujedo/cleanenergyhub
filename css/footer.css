@@ -28,3 +28,15 @@
     text-decoration: none;
     color:white;
 }
+
+@media screen and (max-width: 600px) {
+    .logos, .logos img{
+      width: 25px; 
+      height: 25px;
+      
+    }
+    .macarthur{
+        font-size: 10px;
+    }
+  }
+  
