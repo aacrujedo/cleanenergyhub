@@ -73,7 +73,7 @@ p {
         }
       
         .column img {
-          width: 50%; /* Adjust the width of the image as needed */
+          width: 50%; 
           height: auto;
         }
       }
