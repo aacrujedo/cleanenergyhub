@@ -2,20 +2,17 @@
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    
 }
 
 body {
-    display:grid;
+    display: grid;
     place-items: center;
-    margin: 0;
     height: 100%;
-    width: 100%;
     background-color: white;
-    font-family: "Poppins";
-    color: white;
-    
+    font-family: "Poppins", sans-serif;
+    color: black;
 }
+
 h1 {
     color: black;
     text-align: center;
@@ -25,32 +22,31 @@ h1 {
     border-radius: 10px;
     width: fit-content;
     box-shadow: 10px 5px 5px #857f7f;
+    font-size: 28px;
 }
 
 a {
     text-decoration: none;
 }
 
-
 .card {
     display: flex;
     align-items: center;
-    width: 75vw;
+    width: 90vw;
     max-width: 470px;
-    max-height: 200px;
     padding: 50px 30px 50px 20px;
     background: #00356B;
     border-radius: 24px;
+    /* margin-bottom: 5px; */
 }
 
 .card img {
+    width: 30%;
     max-width: 280px;
-    width: 14vw;
-    height: 11vw;
+    max-height: 280px;
     object-fit: cover;
-    margin-left: -60px;
+    border-radius: 50%;
     margin-right: 30px;
-    border-radius: inherit;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
 }
 
@@ -58,8 +54,7 @@ a {
     font-size: 26px;
     font-weight: 400;
     margin-top: 0;
-    margin-right: -16px;
-    margin-bottom: -5px;
+    margin-bottom: 5px;
 }
 
 .card h3 {
@@ -67,7 +62,6 @@ a {
     font-weight: 400;
     margin: 0;
     opacity: 0.75;
-    /* text-align-last: auto; */
     margin-bottom: 10px;
 }
 
@@ -80,69 +74,49 @@ a {
 }
 
 .card a {
-    display: grid;
-    place-items: center;
+    display: inline-block;
     border: 0;
     background: #0ABAB5;
     color: #f8f8f8;
-    padding: 10px 10px;
-    font-size: 20;
+    padding: 10px 20px;
+    font-size: 18px;
     border-radius: 55px;
     margin-bottom: -40px;
 }
-.statement{
-    align-items: justify;
+
+.statement {
     color: white;
     padding: 10px;
-    size: 16px;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 10px;
     background-color: #50667c;
-    border-radius: 20px;
+    border-radius: 10px;
 }
-
 
 @media (max-width: 600px) {
     .card {
-        display: flex;
-        margin: 0px 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 60px;
-        width: 100%;
-        text-align: center;
         flex-direction: column;
+        padding: 40px 20px 60px;
+        width: 90%;
     }
 
-    .card a{
-        margin-bottom: -70px;
+    .card img {
+        margin: 0 auto 30px;
+        width: 60%;
     }
 
     .card h2 {
         margin-right: 0;
+        text-align: center;
     }
 
-    .card img {
-        display: none;
-        display: flex;
-        margin: -100px 0 30px 0;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .card p {
-        max-width: 360px;
+    h1 {
+        font-size: 24px;
     }
 }
-
 
 @media (max-width: 400px) {
     .card img {
         display: none;
-        display: flex;
-        height: 5vw;
-        width: 5vw;
-        border-radius: 50%;
-        margin-top: 90px;
     }
 }
